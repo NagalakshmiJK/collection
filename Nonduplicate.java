@@ -13,18 +13,16 @@ public class Nonduplicate {
     	   d[i]=s.nextInt();
     	   for(j=0;j<i;j++)
     	   {
-    		   if(d[j]==d[i])
+    		   if(d[i]==d[j])
     		   {
+    			   System.out.println("Sorry this duplicate element \nEnter new elemnt");
     			   d[i]=s.nextInt();
-    			   j=0;
-    			   continue;
+    			   j=-1;
     		   }
     	   }
        }
-       
        System.out.println("print the output");
        for(i=0;i<n;i++)
     	   System.out.println(d[i]);
 	}
-
 }
